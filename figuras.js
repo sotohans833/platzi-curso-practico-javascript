@@ -23,7 +23,7 @@ function perimetroTriangulo(lado1, lado2, base){
 
 function areaTriangulo(altura, base){
     return (base * altura)/2;
-} 
+}
 
 console.groupEnd();
 
@@ -31,6 +31,15 @@ console.groupEnd();
 console.group("Circulos");
 
 const PI = Math.PI;
+
+function alturaTriangulo(ladoA, ladoB, base){
+    if(ladoA == ladoB){
+        return Math.sqrt((ladoA * ladoA)-((base * base)/4))
+    }
+    else {
+        alert("Lo sentimos este no es un triangulo isoceles");
+    }
+}
 
 function diametroCirculo(radio){
     return radio * 2;
@@ -91,6 +100,20 @@ function calcularAreaTriangulo(){
 
     const area = areaTriangulo(valor, valor1);
     alert(area + " Centimetros^2");
+}
+
+function calcularAlturaTriangulo(){
+    const base = document.getElementById("base");
+    const valor = Number(base.value);
+
+    const lado1 = document.getElementById("lado1");
+    const valor1 = Number(lado1.value);
+
+    const lado2 = document.getElementById("lado2");
+    const valor2 = Number(lado2.value);
+
+    const altura = alturaTriangulo(valor1, valor2, valor);
+    alert(altura + " Centimetros");
 }
 
 //CIRCULO
