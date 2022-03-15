@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+h1 {
+    background-color: blue;
+    color: aliceblue;
+}
+
+
+#form {
+    margin: 20px;
+    display: grid;
+    place-items: center;
+}
+
+#form label {
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+button {
+    margin: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 5px;
+    cursor: pointer;
+}
+
+p {
+    margin: 10px;
+}
+
+#recomendacion {
+    margin: 40px 10px;
+    font-size:medium;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: red;
+    font-weight: bold;
+}
+
+

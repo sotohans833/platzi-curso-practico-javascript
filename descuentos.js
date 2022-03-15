@@ -38,7 +38,8 @@ function priceCouponButton(){
 
     if(couponValue == "50percent"){
         const precioCoupon = fivePercent(priceValue);
-        const couponPrice = document.getElementById("couponPrice");couponPrice.innerText = "El precio con descuento son: $" + precioCoupon;
+        const couponPrice = document.getElementById("couponPrice");
+        couponPrice.innerText = "El precio con descuento son: $" + precioCoupon;
     }
     else if (couponValue == "20percent"){
         const precioCoupon = twentyPercent(priceValue);
@@ -46,6 +47,7 @@ function priceCouponButton(){
         couponPrice.innerText = "El precio con descuento son: $" + precioCoupon;
     }
     else{
-        const couponPrice = document.getElementById("couponPrice");couponPrice.innerText = "Ese codigo no existe MALPARIDO ESTUPIDO";
+        const couponPrice = document.getElementById("couponPrice");
+        couponPrice.innerText = "Ese codigo no existe MALPARIDO ESTUPIDO";
     }
 }
