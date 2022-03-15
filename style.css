@@ -4,16 +4,22 @@
     margin: 0;
     text-align: center;
 }
+
 h1 {
     background-color: blue;
     color: aliceblue;
+    font-style: oblique;
 }
 
 
 #form {
-    margin: 20px;
     display: grid;
     place-items: center;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid darkred;
+    padding: 5px;
 }
 
 #form label {
@@ -22,21 +28,38 @@ h1 {
     font-size: large;
 }
 
+input {
+    border-radius: 10px;
+    border: none white;
+    background-color:yellow;
+    font-style: italic;
+}
+
 button {
-    margin: 20px;
+    margin: 15px 0 0 0;
     background-color: blue;
     border-radius: 10px;
     color: aliceblue;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
 }
 
 p {
     margin: 10px;
+    font-weight: 600;
+
+}
+
+aside {
+    font-weight: bold;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 5px;
 }
 
 #recomendacion {
-    margin: 40px 10px;
+    margin: 5px 10px;
     font-size:medium;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10px;

@@ -19,7 +19,7 @@ function calcularEndeudamiento(){
         desarrolloProfesional.innerText = "La inversion en tu desarrollo profesional deberia ser : " + (ingresos * 0.10) + " Dolares";
     
         const inversion = document.getElementById("inversion");
-        inversion.innerText = "Tu inversion de mercado puede ser: " + (ingresos * 0.075) + " Dolares";
+        inversion.innerText = "Tu inversion en el mercado puede ser: " + (ingresos * 0.075) + " Dolares";
     
         const ocio = document.getElementById("ocio");
         ocio.innerText = "Tu gasto en ocio mensual puede ser: " + (ingresos * 0.03) + " Dolares";
@@ -27,11 +27,10 @@ function calcularEndeudamiento(){
         const promedio = (ingresos * 0.50);
         if (egresos > promedio) {
             const recomendacion = document.getElementById("recomendacion");
-            recomendacion.innerText = "RECOMENDACION: Tus gastos superan el promedio eficaz para que tus finanzas funcionen correctamente, revisa bien que gastos no son realmente necesarios para optimizar tus finanzas. Lo maximo que deberias estar gastando en el mes es: " + promedio + " Dolares";
+            recomendacion.innerText = "RECOMENDACION: Tus gastos superan el promedio eficaz para que tus finanzas funcionen correctamente, revisa bien que gastos no son realmente necesarios, para asi optimizar tus finanzas. Lo maximo que deberias estar gastando en el mes es: " + promedio + " Dolares";
         }
     }
     else {
-        alert("Lo sentimos tus gastos son mayores  o iguales a tus ingresos, Ingresa valores validos");
+        alert("Lo sentimos los valores que ingresaste no son validos. Verifica que tus gastos no superen a tus ingresos e intenta nuevamente");
     }
 }
-

@@ -18,15 +18,19 @@
                 <input type="number" id="inputIngresos">
                 <label for="inputEgresos">Ingresa por favor tus gastos fijos:</label>
                 <input type="number" id="inputEgresos">
-                <button type="button" onclick="calcularEndeudamiento()" >Calcula Tu Optimizacion Financiera
+                <button type="button" onclick="calcularEndeudamiento()" id="calcu">Calcula Tu Optimizacion Financiera
+                </button>
+                <button onclick="restablecerValores()" > Restablecer valores
                 </button>
             </form>
         </section>
-        <p id="endeudamiento"></p>
-        <p id="ahorro"></p>
-        <p id="desarrolloProfesional"></p>
-        <p id="inversion"></p>
-        <p id="ocio"></p>
+        <aside>
+            <p id="endeudamiento"></p>
+            <p id="ahorro"></p>
+            <p id="desarrolloProfesional"></p>
+            <p id="inversion"></p>
+            <p id="ocio"></p>
+        </aside>
         <p id="recomendacion"></p>
         <script src="./finanzas.js"></script>
     </main>
